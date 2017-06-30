@@ -1,0 +1,37 @@
+<section >
+
+    <header>
+        <div class="kuang">
+            <div>
+                <span class="xuanxiang">&#xe644;</span>
+                <span>首页</span>
+            </div>
+            <div>
+                <span>&#xe62b;</span>
+                <span>&#xe805;</span>
+            </div>
+
+        </div>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href=""><div>还记得初中课本说的可燃冰吗？它终于被中国首次成功开采</div><img src="image/banner1.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><div>70 年，戛纳这个不起眼的小城一步步成为电影的「圣地」</div><img src="image/banner2.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><div>我经历过最凶险的事情，就是换灯泡</div><img src="image/banner3.jpg" alt=""></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <section class="neirong">
+        <div class="title">
+            今日热闻
+        </div>
+        <ul>
+            <li ng-repeat="v in dddata">
+                <news imgurl="{{v.thumbnail}}" title="{{v.title}}" link="#!/show/{{v.news_id}}"></news>
+            </li>
+        </ul>
+
+    </section>
+</section>

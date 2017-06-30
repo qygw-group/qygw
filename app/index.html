@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="zhihu" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="never">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="select">
+    <div class="select-title">
+        <div class="login">
+            <img src="image/head.png" alt="">
+            请登录
+        </div>
+        <div class="save">
+            <div class="shoucang">
+                <apan>&#xe627;</apan>
+                <a href="">我的收藏</a>
+            </div>
+            <div class="shoucang">
+                <apan>&#xe600;</apan>
+                <a href="">离线下载</a>
+            </div>
+        </div>
+    </div>
+    <div class="select-index">
+        <span>&#xe603;</span>
+        <span>主页</span>
+    </div>
+    <ul>
+        <li class="select-content" ng-repeat="v in data">
+            <a href="#!/list/{{v.id}}" style="color: #000">
+                {{v.name}}
+                <div class="jiantou">
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="mask"></div>
+<section ng-view>
+
+</section>
+
+
+</body>
+</html>

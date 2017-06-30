@@ -1,0 +1,30 @@
+
+<header>
+    <div class="h-left">
+        <span> &#xe602;</span>
+        <a href="#">41条评论</a>
+    </div>
+    <div class="h-right">
+        <span>&#xe661;</span>
+    </div>
+</header>
+<!--content start-->
+<section class="conbox">
+    <p>六条评论</p>
+    <ul class="list">
+        <li ng-repeat="v in pdata.comments">
+            <div class="list-top">
+                <ul>
+                    <li>
+                        <div class="cirimg" style="background: url('{{v.avatar}}')"></div>
+                        <span>{{v.author}}</span>
+                    </li>
+                </ul>
+                <div class="dz"><span class="icon">&#xe60f;</span><span>1</span></div>
+            </div>
+            <p class="plcon">{{v.content}}</p>
+            <p class="pldate">{{v.time|date:'yyyy-MM-dd'}}</p>
+        </li>
+    </ul>
+</section>
+<!--content end-->

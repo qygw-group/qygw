@@ -1,0 +1,33 @@
+
+<header>
+    <div class="kuang">
+        <div>
+            <span class="xuanxiang">&#xe6cd;</span>
+            <span>首页</span>
+        </div>
+            <div>
+                <span>&#xe600;</span>
+            </div>
+
+    </div>
+</header>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href=""><div>{{description}}</div><img src="{{imageurl}}" alt=""></a></div>
+    </div>
+
+
+</div>
+<section class="neirong">
+    <div class="title">
+        今日新闻
+    </div>
+    <ul>
+        <li ng-repeat="v in ddata">
+            <news imgurl="{{v.images[0]}}" title="{{v.title}}" link="#!/show/{{v.id}}"></news>
+        </li>
+
+    </ul>
+
+</section>
